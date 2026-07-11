@@ -32,7 +32,7 @@ Este proyecto es **100% open source**. Cualquiera puede:
 
 El código fuente completo está en este repositorio:
 
-**Repositorio:** *(agregar link acá)*
+**Repositorio:** https://github.com/VienecitoProgramador/Luantic
 
 ## Requisitos
 

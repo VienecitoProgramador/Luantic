@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>EntityScript Editor</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="app">
+  <div class="toolbar">
+    <span class="brand">EntityScript <span class="dim">v0.2</span></span>
+    <button class="primary" id="btnCompile">▶ Compilar <span class="hint">(Ctrl+Enter)</span></button>
+    <button id="btnExample">Ejemplos ▾</button>
+    <button id="btnDownload" disabled>⇩ Descargar .zip</button>
+    <div class="toolbar-spacer"></div>
+    <label class="checkbox">
+      <input type="checkbox" id="chkPreserveComments">
+      Preservar comentarios
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" id="chkAutoCompile" checked>
+      Autocompilar
+    </label>
+  </div>
+
+  <div class="main">
+    <div class="pane">
+      <div class="pane-header">
+        <span>editor.es</span>
+        <span id="charCount"></span>
+      </div>
+      <div class="editor-wrap">
+        <div class="line-numbers" id="lineNumbers">1</div>
+        <textarea id="codeArea" spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="pane">
+      <div class="pane-header">
+        <span>Salida (Luau generado por Compiler/, no reimplementado aquí)</span>
+      </div>
+      <div class="output-scroll" id="output">
+        <div class="placeholder">Escribí código EntityScript a la izquierda y presioná "▶ Compilar".</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="statusbar" id="statusbar">Conectando con el compilador local…</div>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
